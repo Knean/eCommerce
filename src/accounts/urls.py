@@ -6,7 +6,7 @@ from .views import (
         AccountEmailActivateView,
         UserDetailUpdateView
         )
-
+app_name = 'accounts'
 urlpatterns = [
     url(r'^$', AccountHomeView.as_view(), name='home'),
     url(r'^details/$', UserDetailUpdateView.as_view(), name='user-update'),

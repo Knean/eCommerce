@@ -4,7 +4,7 @@ from .views import (
         OrderListView, 
         OrderDetailView
         )
-
+app_name = 'orders'
 urlpatterns = [
     url(r'^$', OrderListView.as_view(), name='list'),
     url(r'^(?P<order_id>[0-9A-Za-z]+)/$', OrderDetailView.as_view(), name='detail'),
